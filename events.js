@@ -41,8 +41,8 @@ function three () {
 }
 // CREATE FUNCTION four HERE
 function four() {
-  var four = document.getElementsById('four')
-  four.addEventListener('click', makePurple)
+  var four = document.getElementById('four')
+  four.addEventListener('click', makeRed)
 }
 
 // Changes the background color of event's target
@@ -62,6 +62,6 @@ function makeOrange (evt) {
   evt.target.style.backgroundColor = 'orange'
 }
 
-function makePurple (evt) {
-  evt.target.style.backgroundColor = 'purple'
+function makeRed (evt) {
+  evt.target.style.backgroundColor = 'red'
 }
